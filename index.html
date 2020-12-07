@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="wrap">
+		<h1 class="title">To do List</h1>
+		<div class="react" id="like_button_container">react</div>
+		<h3 class="clock" id="js_clock">00:00</h3>
+		<div class="todo-write">
+			<p>Write and Press Enter!</p>
+			<form action="#">
+				<input id="js_input" type="text" placeholder="none">
+				<button id="js_saveBtn">SAVE</button>
+			</form>
+			<ul id="js_ulList">
+
+			</ul>
+		</div>
+		<div class="todo-done">
+			<p>Done</p>
+		</div>
+	</div>
+
+	<script src="main/clock.js"></script>
+	<script src="main/list.js"></script>
+	<!-- React를 실행. -->
+	<!-- 주의: 사이트를 배포할 때는 "development.js"를 "production.min.js"로 대체하세요. -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<!-- 만든 React 컴포넌트를 실행. -->
+	<script src="main/like_button.js"></script>
+</body>
+</html>
